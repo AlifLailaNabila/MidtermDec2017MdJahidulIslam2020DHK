@@ -206,8 +206,10 @@ What is the difference between String, StringBuffer and StringBuilder?
   of bytes is called deserialization.
 
 Which one will take more memory, an int or Integer?
-Answer:
- Why is String Immutable in Java?
+  Answer: An int shall take 4 bytes and Integer shall take about 16 bytes space in heap.Integer are wrapper class which
+  has more overhead compared to primitive type. The memory space consumption by object depends upon JVM during run time
+  environment. For a object this space varies.
+Why is String Immutable in Java?
 Answer:  Security: parameters are typically represented as String in network connections, database connection urls,
          usernames/passwords etc. If it were mutable, these parameters could be easily changed.
          Synchronization and concurrency: making String immutable automatically makes them thread safe thereby
