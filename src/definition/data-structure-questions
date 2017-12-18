@@ -60,7 +60,8 @@ FIFO: First in first out. Example: In Queue data can be accessed by FIFO method.
 LIFO: Last in first out. Example: In Stack elements can be accessed on the basis of LIFO.
 
 what is the order of complexity?
-Answer:
+Answer: For input is of size N, we can say that the algorithm will finish at O(1), O(N), O(N^2), O(N^3), O(N*log(N)) etc.
+
 
 what is the best case to search an element from an array?
 Answer: Best case - you find it (assuming you only need to find one) on the first comparison.
@@ -125,6 +126,7 @@ Answer: 1. An array element is having index number, but a node is having referen
          in memory for pointer.
         4. Linked list consumed extra memory as the link location need to be saved in in the linked
         part of the previous elements in case of array it is not required.
+
 What is DFS and BFS?
 Answer:Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structure
        This one starts at the root and explores as far as possible along each branch before backtracking.
@@ -176,7 +178,7 @@ Worst case space complexity: O(n) total, O(1) auxiliary
 4. Merge sort: It is an O(n log n) comparison-based sorting algorithm.
 Worst case performance: O(n log n)
 Best case performance: O(n log n) typical
-Average case peroformance: O(n log n)
+Average case performance: O(n log n)
 Worst case space complexity: O(n) total, O(n) auxiliary
 
 5.Quick sort: It is similar to merge sort in many ways. It divides the elements to be sorted into
@@ -186,9 +188,27 @@ The choice of a good pivot element is critical to the efficiency of the quicksor
 If we can ensure that the pivot element is near the median of the array values, then quicksort is very efficient.
 on average, makes O(n log n) comparisons to sort n items, in the worst case, it makes O(n2) comparisons
 
-
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
   b)In terms of Inserting element.
   c)In terms of Searching element.
   d)In terms of Removing element.
+
+                                Common Data Structure Operations
+Data Structure	    Time Complexity
+                    Average	                                        Worst
+                    Access	    Search	    Insertion	Deletion	Access	    Search	    Insertion	Deletion
+Array	            Θ(1)	    Θ(n)	    Θ(n)	    Θ(n)	    O(1)	    O(n)	    O(n)	    O(n)
+Stack	            Θ(n)	    Θ(n)	    Θ(1)	    Θ(1)	    O(n)	    O(n)	    O(1)	    O(1)
+Queue	            Θ(n)	    Θ(n)	    Θ(1)	    Θ(1)	    O(n)	    O(n)	    O(1)	    O(1)
+Singly-Linked List	Θ(n)	    Θ(n)	    Θ(1)	    Θ(1)	    O(n)	    O(n)	    O(1)	    O(1)
+Doubly-Linked List	Θ(n)	    Θ(n)	    Θ(1)	    Θ(1)	    O(n)	    O(n)	    O(1)	    O(1)
+Skip List	        Θ(log(n))	Θ(log(n))	Θ(log(n))	Θ(log(n))	O(n)	    O(n)	    O(n)	    O(n)
+Hash Table	        N/A	        Θ(1)	    Θ(1)	    Θ(1)	    N/A	        O(n)	    O(n)	    O(n)
+Binary Search Tree	Θ(log(n))	Θ(log(n))	Θ(log(n))	Θ(log(n))	O(n)	    O(n)	    O(n)	    O(n)
+Cartesian Tree	    N/A	        Θ(log(n))	Θ(log(n))	Θ(log(n))	N/A	        O(n)	    O(n)	    O(n)
+B-Tree	            Θ(log(n))	Θ(log(n))	Θ(log(n))	Θ(log(n))	O(log(n))	O(log(n))	O(log(n))	O(log(n))
+Red-Black Tree	    Θ(log(n))	Θ(log(n))	Θ(log(n))	Θ(log(n))	O(log(n))	O(log(n))	O(log(n))	O(log(n))
+Splay Tree	        N/A	        Θ(log(n))	Θ(log(n))	Θ(log(n))	N/A	        O(log(n))	O(log(n))	O(log(n))
+AVL Tree	        Θ(log(n))	Θ(log(n))	Θ(log(n))	Θ(log(n))	O(log(n))	O(log(n))	O(log(n))	O(log(n))
+KD Tree 	        Θ(log(n))	Θ(log(n))	Θ(log(n))	Θ(log(n))	O(n)	    O(n)	    O(n)	    O(n)
